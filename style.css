@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, #1d002d, #4d0078);
+}
+
+.header-wrap {
+  margin: 52px 0;
+  text-align: center;
+  color: #00ff1a;
+  font-family: cursive;
+}
+
+.header-wrap h1 {
+  margin-top: -7px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 51px;
+  font-family: cursive;
+  color: #ffffff;
+}
+
+.header-wrap h4 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #ff0074;
+  font-family: cursive;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*ace*/
+.ace_editor {
+  font-size: 14px !important;
+}
+
+#ide-parent {
+  width: 91%;
+  height: auto;
+  border-radius: 13px;
+  overflow: hidden;
+  margin: auto;
+  box-shadow: 0px 0px 18px -10px rgb(255 255 255);
+}
+
+#button-wrapper {
+  display: flex;
+  width: 100%;
+  height: 52px;
+}
+
+#button-wrapper button {
+  width: 25%;
+  border: none;
+  background: #00325e;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: monospace;
+  letter-spacing: 2px;
+  font-size: 15px;
+  outline: none;
+  transition-duration: 300ms;
+}
+
+#button-wrapper button:hover {
+  background: #000e1b;
+}
+
+#ide-container {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+}
+
+.panel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#html {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#css {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#js {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#result {
+  width: 100%;
+  height: 100%;
+  background: #002240;
+  border: none;
+}
+
+.ace-dracula {
+  background-color: #162447 !important;
+}
+
+.ace-dracula .ace_gutter {
+  background: #162447 !important;
+}
+
+.ace_scrollbar-h {
+  scrollbar-color: #1f4068 #162447 !important;
+  scrollbar-width: thin !important;
+  cursor: pointer;
+}
+
+.ace_scrollbar-v {
+  scrollbar-color: #1f4068 #162447 !important;
+  scrollbar-width: thin !important;
+  cursor: pointer;
+}
+
+.ace_scrollbar-h::-webkit-scrollbar {
+  border: none;
+  height: 0.6em;
+}
+
+.ace_scrollbar-h::-webkit-scrollbar-thumb {
+  background: #1f4068;
+  border: none;
+}
+
+.ace_scrollbar-h::-webkit-scrollbar-thumb:hover {
+  background: #173458;
+}
+
+.ace_scrollbar-h::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ace_scrollbar-v::-webkit-scrollbar {
+  border: none;
+  width: 0.6em;
+}
+
+.ace_scrollbar-v::-webkit-scrollbar-thumb {
+  background: #1f4068;
+  border: none;
+}
+
+.ace_scrollbar-v::-webkit-scrollbar-thumb:hover {
+  background: #173458;
+}
+
+.ace_scrollbar-v::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.description {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: center;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.description p {
+  line-height: 24px;
+}
+
+.description svg {
+  width: 50px;
+  cursor: pointer;
+  height: auto;
+  margin-top: 24px;
+}
+
+.description svg path {
+  fill: #e43f5a;
+}
+
+.description a {
+  color: #e43f5a;
+}
+
+
+.footer {
+  text-align: center;
+  color: rgba(221, 221, 221, 0.8);
+  font-family: sans-serif;
+  font-size: 14px;
+  background: #000e1b;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.inner-wrap {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-wrap p {
+  margin: 5px 0;
+}
+
+.inner-wrap i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.inner-wrap i:hover {
+  color: #ffffff;
+}
+
+.icons-wrap {
+  margin-top: 10px;
+}
+
+
+#download-button {
+  display: flex;
+  justify-content: center;
+}
+
+#download-button button {
+  padding: 16px 21px; /* Adjust padding for a smaller button */
+  font-size: 14px; /* Adjust font size for a smaller button */
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(45deg, #cd54ff, #420066);
+  border-radius: 20px; /* Adjust border radius for a more compact look */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  width: auto; /* Allow button to adjust its width based on content */
+  margin-top: -2%;
+  margin-bottom: 3%;
+}
+
+#download-button button:hover {
+  background-color: #0088ff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgb(70 70 70 / 30%);
+}
+
+#download-button i {
+  margin-left: 4px; /* Adjust margin for the icon */
+}

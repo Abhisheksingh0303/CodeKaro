@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codekaro | Live Code Editor</title>
+  <meta name="description" content="This is an online code editor for html css and javascript. ">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Abhishek Singh">
+  <meta name="keywords"
+    content="Live code editor, online code editor, live html editor, live css editor, live javascript editor">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="header-wrap">
+    <h2>Hello Buddy<span class="wave">👋</span></h2>
+    <h1>Welcome to Codekaro</h1>
+    <h4>Compile HTML, CSS and JavaScript on the web</h4>
+  </div>
+
+  <div class="panel-wrapper">
+    <a id="download-button" download="code.html">
+      <button onclick="downloadCode()">Download Code<i class="fas fa-download"></i></button>
+    </a>
+  </div>
+
+
+  <div id="ide-parent">
+    <div id="button-wrapper">
+      <button onclick="switchPanel(0)">HTML<i class="fab fa-html5" style="color: #ff6600;"></i></button>
+      <button onclick="switchPanel(1)">CSS<i class="fa-brands fa-css3-alt" style="color: #0084ff;"></i></button>
+      <button onclick="switchPanel(2)">js<i class="fa-brands fa-js" style="color: #ffd500;"></i></button>
+      <button onclick="runEdit(3)">Result<i class="fa-solid fa-code" style="color: #00ff40;"></i></button>
+    </div>
+    <div id="ide-container">
+      <div class="panel-wrapper">
+        <div id="html">
+
+      &lt;!-- This is editable HTML code, Add your HTML CODE AND START CODING --&gt;
+
+          &lt;html&gt;
+          &lt;head&gt;
+          &lt;title&gt;Codekaro&lt;/title&gt;
+          &lt;link rel="stylesheet" type="text/css" href="style.css"&gt
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;div class="perspective"&gt;
+          &lt;div class="tardis-wrap"&gt;
+          &lt;div class="tardis"&gt;
+          &lt;!-- start of side --&gt;
+          &lt;div class="side"&gt;
+          &lt;div class="top-sign"&gt;
+          &lt;div class="text"&gt;
+          &lt;span class="left"&gt;CODEKARO&lt;/span&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door-frame"&gt;
+          &lt;div class="door door-left"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="sign"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door door-right"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- end of side --&gt;
+
+          &lt;!-- start of side --&gt;
+          &lt;div class="side"&gt;
+          &lt;div class="top-sign"&gt;
+          &lt;div class="text"&gt;
+          &lt;span class="left"&gt;CODEKARO&lt;/span&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door-frame"&gt;
+          &lt;div class="door door-left"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door door-right"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- end of side --&gt;
+
+          &lt;!-- start of side --&gt;
+          &lt;div class="side"&gt;
+          &lt;div class="top-sign"&gt;
+          &lt;div class="text"&gt;
+          &lt;span class="left"&gt;CODEKARO&lt;/span&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door-frame"&gt;
+          &lt;div class="door door-left"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door door-right"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- end of side --&gt;
+
+          &lt;!-- start of side --&gt;
+          &lt;div class="side"&gt;
+          &lt;div class="top-sign"&gt;
+          &lt;div class="text"&gt;
+          &lt;span class="left"&gt;CODEKARO&lt;/span&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door-frame"&gt;
+          &lt;div class="door door-left"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="door door-right"&gt;
+          &lt;div class="door-inset"&gt;&lt;/div&gt;
+          &lt;div class="door-inset b"&gt;&lt;/div&gt;
+          &lt;div class="door-inset c"&gt;&lt;/div&gt;
+          &lt;div class="window"&gt;
+          &lt;div class="pane a"&gt;&lt;/div&gt;&lt;div class="pane b"&gt;&lt;/div&gt;&lt;div class="pane
+          c"&gt;&lt;/div&gt;
+          &lt;div class="pane d"&gt;&lt;/div&gt;&lt;div class="pane e"&gt;&lt;/div&gt;&lt;div class="pane
+          f"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- end of side --&gt;
+
+          &lt;div class="roof"&gt;&lt;/div&gt;
+
+          &lt;div class="roof-top"&gt;
+          &lt;div class="roof-panel a"&gt;&lt;/div&gt;
+          &lt;div class="roof-panel b"&gt;&lt;/div&gt;
+          &lt;div class="roof-panel c"&gt;&lt;/div&gt;
+          &lt;div class="roof-panel d"&gt;&lt;/div&gt;
+          &lt;div class="top-lid"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class="light"&gt;
+          &lt;div class="light-panel a"&gt;&lt;div class="bottom"&gt;&lt;/div&gt;&lt;div
+          class="top"&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class="light-panel b"&gt;&lt;div class="bottom"&gt;&lt;/div&gt;&lt;div
+          class="top"&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class="light-panel c"&gt;&lt;div class="bottom"&gt;&lt;/div&gt;&lt;div
+          class="top"&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class="light-panel d"&gt;&lt;div class="bottom"&gt;&lt;/div&gt;&lt;div
+          class="top"&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;div class="light-lid"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;!-- start of floor --&gt;
+          &lt;div class="floor"&gt;
+          &lt;div class="floor-panel a"&gt;&lt;/div&gt;
+          &lt;div class="floor-panel b"&gt;&lt;/div&gt;
+          &lt;div class="floor-panel c"&gt;&lt;/div&gt;
+          &lt;div class="floor-panel d"&gt;&lt;/div&gt;
+          &lt;div class="floor-lid"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!-- end of floor --&gt;
+
+          &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;/div&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="css">
+          /*This is editable CSS code, Add your CSS CODE AND START CODING*/
+
+          body{
+          font-family: arial;
+          background: #fff;
+          overflow: hidden;
+          }
+
+          .name{
+          color: #aaa;
+          font-size: 12px;
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          text-align: right;
+          }
+
+          .name div:first-of-type{
+          font-size: 14px;
+          }
+
+          .name a{
+          color: #aaa;
+          }
+
+          .name a:hover{
+          color: #888;
+          }
+
+          .left{
+          float: left;
+          }
+
+          .right{
+          float: right;
+          }
+
+
+
+          .perspective{
+          perspective: 1200px;
+          -webkit-perspective: 1200px;
+          }
+
+          .tardis-wrap{
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+
+          transform : translateZ(-300px);
+          -webkit-transform : translateZ(-300px);
+          }
+
+          .tardis{
+          position: relative;
+          width: 200px;
+          height: 200px;
+          margin: 100px auto;
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+
+          transform-origin: 50% 50%;
+          -webkit-transform-origin: 50% 50%;
+
+          transform: rotateX(-20deg) rotateY(-30deg);
+          -webkit-transform: rotateX(-20deg) rotateY(-30deg);
+
+          animation-name: spin;
+          animation-duration: 5000ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          }
+
+          @keyframes spin{
+          from{
+          transform: rotateX(-20deg) rotateY(0deg);
+          }
+
+          to{
+          transform: rotateX(-20deg) rotateY(360deg);
+          }
+          }
+
+
+
+          /*
+          #
+          # Begin details
+          #
+          */
+          .tardis .side{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 200px;
+          height: 360px;
+          background-color: #3f577d;
+
+          box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          z-index: 1;
+          }
+
+          .side:nth-of-type(1){
+          transform : translateZ(100px);
+          -webkit-transform : translateZ(100px);
+          }
+
+          .side:nth-of-type(2){
+          transform : rotateY(90deg) translateZ(100px);
+          -webkit-transform : rotateY(90deg) translateZ(100px);
+          }
+
+          .side:nth-of-type(3){
+          transform : rotateY(180deg) translateZ(100px);
+          -webkit-transform : rotateY(180deg) translateZ(100px);
+          }
+
+          .side:nth-of-type(4){
+          transform : rotateY(-90deg) translateZ(100px);
+          -webkit-transform : rotateY(-90deg) translateZ(100px);
+          }
+
+          .tardis .roof{
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          background-color: #3f577d;
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+
+          transform : rotateX(-90deg) translateZ(-100px);
+          -webkit-transform : rotateX(-90deg) translateZ(-100px);
+          z-index: 2;
+          }
+
+
+          /* The top roof box */
+          .roof-top{
+          position: absolute;
+
+          left: 30px;
+          width: 140px;
+          height: 140px;
+          z-index: 2;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .top-lid{
+          width: 140px;
+          height: 140px;
+          background-color: #355683;
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          transform : rotateX(-90deg) translateZ(-89px);
+          -webkit-transform : rotateX(-90deg) translateZ(-89px);
+          }
+
+          .roof-panel{
+          position: absolute;
+          width: 140px;
+          height: 20px;
+          background-color: #445d84;
+          box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+          top: -20px;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .roof-panel.a{
+          transform: rotateY(0deg) translateZ(70px);
+          -webkit-transform: rotateY(0deg) translateZ(70px);
+          }
+
+          .roof-panel.b{
+          transform: rotateY(90deg) translateZ(70px);
+          -webkit-transform: rotateY(90deg) translateZ(70px);
+          }
+
+          .roof-panel.c{
+          transform: rotateY(180deg) translateZ(70px);
+          -webkit-transform: rotateY(180deg) translateZ(70px);
+          }
+
+          .roof-panel.d{
+          transform: rotateY(-90deg) translateZ(70px);
+          -webkit-transform: rotateY(-90deg) translateZ(70px);
+          }
+
+          /* Light */
+          .light{
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: -60px;
+          left: 85px;
+          z-index: 3;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .light-lid{
+          width: 30px;
+          height: 30px;
+          background-color: #eee;
+
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          transform : rotateX(-90deg) translateZ(-14px);
+          -webkit-transform : rotateX(-90deg) translateZ(-14px);
+          }
+
+          .light .light-panel{
+          position: absolute;
+          width: 30px;
+          height: 40px;
+
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .light .light-panel .bottom{
+          width: 30px;
+          height: 12px;
+          position: absolute;
+          bottom: 0px;
+          background-color: #355683;
+          box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+          }
+
+          .light .light-panel .top{
+          width: 30px;
+          height: 28px;
+          position: absolute;
+          top: 0px;
+          background-color: #eee;
+          box-shadow: inset 1px 0 0 #fff, inset -1px 0 0 #fff, inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+          }
+
+          .light-panel.a{
+          transform: rotateY(0deg) translateZ(15px);
+          -webkit-transform: rotateY(0deg) translateZ(15px);
+          }
+          .light-panel.b{
+          transform: rotateY(90deg) translateZ(15px);
+          -webkit-transform: rotateY(90deg) translateZ(15px);
+          }
+          .light-panel.c{
+          transform: rotateY(180deg) translateZ(15px);
+          -webkit-transform: rotateY(180deg) translateZ(15px);
+          }
+          .light-panel.d{
+          transform: rotateY(-90deg) translateZ(15px);
+          -webkit-transform: rotateY(-90deg) translateZ(15px);
+          }
+
+
+          /* Floor */
+          .tardis .floor{
+          position: absolute;
+          width: 220px;
+          height: 220px;
+          left: -10px;
+          top: 360px;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .floor-lid{
+          position: absolute;
+          width: 220px;
+          height: 220px;
+          background-color: #355683;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          transform: rotateX(90deg) translateZ(109px);;
+          -webkit-transform: rotateX(90deg) translateZ(109px);;
+          }
+
+          .floor-panel{
+          position: absolute;
+          width: 220px;
+          height: 10px;
+          background-color: #3f577d;
+          box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+          transform-style: preserve-3d;
+          -webkit-transform-style: preserve-3d;
+          }
+
+          .floor-panel.a{
+          transform: rotateY(0deg) translateZ(110px);
+          -webkit-transform: rotateY(0deg) translateZ(110px);
+          }
+
+          .floor-panel.b{
+          transform: rotateY(90deg) translateZ(110px);
+          -webkit-transform: rotateY(90deg) translateZ(110px);
+          }
+
+          .floor-panel.c{
+          transform: rotateY(180deg) translateZ(110px);
+          -webkit-transform: rotateY(180deg) translateZ(110px);
+          }
+
+          .floor-panel.d{
+          transform: rotateY(-90deg) translateZ(110px);
+          -webkit-transform: rotateY(-90deg) translateZ(110px);
+          }
+
+          /*
+          #
+          # Top sign
+          #
+          */
+          .side .top-sign{
+          width: 180px;
+          height: 28px;
+          background-color: #445d84;
+          border: solid 1px #54749f;
+          box-shadow: 0px 2px 4px rgba(0,0,0,.4);
+          border-radius: 2px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
+
+          z-index: 10;
+          }
+
+          .top-sign .text{
+          background-color: #28394d;
+          border: solid 1px #54749f;
+          border-radius: 2px;
+          width: 100px;
+          margin: 3px auto;
+          height: 20px;
+          color: #fff;
+          font-size: 12px;
+          line-height: 20px;
+          padding: 0px 5px;
+          box-shadow: inset 0px 0px 3px rgba(0,0,0,.4);
+          position: relative;
+
+          text-shadow: 0px 0px 4px rgba(255,255,255, .6);
+          }
+
+          .text .tiny{
+          font-size: 4px;
+          line-height: 6px;
+          text-align: center;
+          width: 20px;
+          position: absolute;
+          right: 35px;
+          top: 4px;
+          }
+
+          /*
+          #
+          # Door frame
+          #
+          */
+          .side .door-frame{
+          position: absolute;
+          width: 160px;
+          left: 20px;
+          top: 35px;
+          bottom: 0px;
+
+          background-color: #445d84;
+
+          box-shadow:inset 0px 2px 8px rgba(0,0,0,.5);
+
+          z-index: 5;
+          }
+
+
+          .door-frame .door{
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          width: 77px;
+
+          box-shadow:inset 0px 0px 3px rgba(0,0,0,.7);
+          }
+
+          .door.door-left{
+          left: 0px;
+          }
+
+          .door.door-right{
+          right: 0px;
+          }
+
+          /* Insets */
+          .door .door-inset{
+          position: absolute;
+          left: 10px;
+          bottom: 10px;
+
+          width: 55px;
+          height: 65px;
+          box-shadow:inset 0px .5px 5px rgba(0,0,0,.5);
+          }
+
+          .door-inset:nth-of-type(2){
+          bottom: 85px;
+          }
+
+          .door-inset:nth-of-type(3){
+          bottom: 160px;
+          }
+
+          /* Sign */
+          .door .sign{
+          position: absolute;
+          left: 15px;
+          bottom: 165px;
+          width: 45px;
+          height: 55px;
+          background-color: #d5e4f6;
+          box-shadow: inset 1px 0 0 #313d49, inset -1px 0 0 #313d49, inset 0 1px 0 #313d49, inset 0 -1px 0 #313d49;
+          }
+
+          /* Window */
+          .door .window{
+          position: absolute;
+          left: 10px;
+          bottom: 235px;
+
+          width: 55px;
+          height: 65px;
+          background-color: #28475d;
+          }
+
+          .window .pane{
+          width: 14px;
+          height: 28px;
+          background-color: #dfe7fc;
+          float: left;
+          margin: 2px;
+          box-shadow: inset 0px 0px 10px #fff;
+          }
+
+          .pane.a{
+          margin-left: 3px;
+          margin-right: 1px;
+          }
+
+          .pane.d{
+          margin-left: 3px;
+          margin-right: 1px;
+          }
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="js">
+          /*This is editable JS code, Add your JS CODE AND START CODING*/
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <iframe id="result"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  
+  <div class="footer">
+    <div class="inner-wrap">
+      <p>&#169; <span id="current-year"></span> Codekaro || Abhishek Singh || All Rights Reserved</p>
+      <p>Live Coding Platform for Developers</p>
+      <div class="icons-wrap">
+        <a href="https://www.facebook.com/ab.abhishek.1806" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shekabhi_03/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-singh-531889240/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Abhisheksingh0303" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+</div>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("current-year").textContent = currentYear;
+  </script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js" type="text/javascript" charset="utf-8">
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
