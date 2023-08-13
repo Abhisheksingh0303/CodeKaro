@@ -6,26 +6,26 @@ CodeKaro is a powerful online live code editor that allows you to write, test, a
 
 # Features
 
-Real-time Editing 
+Real-time Editing:-  
 Write and see your code results instantly in the same window, making the learning and development process efficient and interactive.
 
-Support for Multiple Languages
+Support for Multiple Languages:- 
 CodeKaro supports HTML, CSS, and JavaScript, enabling you to work on all aspects of web development seamlessly.
 
-Code Autocompletion
+Code Autocompletion:- 
 Enjoy code autocompletion for HTML tags, CSS properties, and JavaScript functions, making coding faster and reducing syntax errors.
 
-Responsive Design Preview
+Responsive Design Preview:- 
 Visualize how your code renders on different screen sizes with a built-in responsive design preview.
 
-Syntax Highlighting
+Syntax Highlighting:- 
 Clear and distinct syntax highlighting for HTML, CSS, and JavaScript helps you identify code elements quickly.
 
-Error Notifications
+Error Notifications:- 
 Receive real-time error notifications, helping you identify and correct mistakes as you code.
 
-Save and Share
-Save your code snippets.
+Save and Share:- 
+Save your code snippets directly to your desktop.
 
 # Contributing
 CodeKaro is an open-source project, and contributions are welcome! If you have suggestions for new features, improvements, or bug fixes, please open an issue on our GitHub repository.
